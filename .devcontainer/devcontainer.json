@@ -1,0 +1,16 @@
+// For a React + TypeScript project using Vite
+{
+  "name": "react Prep",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "frontend",
+  "workspaceFolder": "/workspace",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "ms-dotnettools.csharp"
+  ],
+  "settings": {},
+  "postCreateCommand": "cd frontend && npm install && cd ../backend && dotnet restore",
+  "forwardPorts": [3000, 5000],
+  "remoteUser": "vscode"
+}
